@@ -161,14 +161,14 @@ Dockerfile
       CMD gunicorn -b :$PORT ttsProject.wsgi
       
       
- <your-project-id>를 프로젝트 ID로 바꾸고 Docker 이미지를 만듭니다.
+ your-project-id를 프로젝트 ID로 바꾸고 Docker 이미지를 만듭니다.
   
         docker build -t gcr.io/<your-project-id>/maratron .
         
         gcloud auth configure-docker
         
    
-  Docker 이미지를 푸시합니다. <your-project-id>를 프로젝트 ID로 바꿉니다.
+  Docker 이미지를 푸시합니다. your-project-id를 프로젝트 ID로 바꿉니다.
       
         docker push gcr.io/<your-project-id>/maratron
  
